@@ -1,0 +1,5 @@
+Estos son los fuentes C para compilar el remake del Alien 8.
+No olvides que para que funcione necesitas enlazarlos con las librerías Allegro y FMod.
+Para cualquier duda o comentario, me puedes escribir a perezg_ret@terra.es
+
+Ignacio Pérez Gil.
