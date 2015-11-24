@@ -147,6 +147,7 @@ int inet_sendscore(char *name, char *scorecode)
 
  // Create request URL
  sprintf(url,"%s/highscore.php?yourname=%s&code=%s",serv,name,scorecode);
+ printf("%s\n",url);
  curl_easy_setopt(internet, CURLOPT_URL, url);
 
  // Send data

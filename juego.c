@@ -3940,7 +3940,7 @@ void ini_partida(void)
  movs[0].dir=0;
  dt_partida.crionautas=0;
  dt_partida.cerraduras=0;
- dt_partida.vidas=4;
+ dt_partida.vidas=5;
  cv[0]=LETRA_CERR_0;
  if(nuevo_marcador)
   {BITMAP *mpt=create_bitmap(19,10);

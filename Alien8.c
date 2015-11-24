@@ -1,25 +1,25 @@
 //******************************************************************************
-// alien8.c 
-// Función main() y funciones de estado.
-// Por Ignacio Pérez Gil 18/05/2008.
+// alien8.c
+// Funciï¿½n main() y funciones de estado.
+// Por Ignacio Pï¿½rez Gil 18/05/2008.
 //******************************************************************************
 
 // Mi madre era una minipime,
-// mi padre era un transistó,
+// mi padre era un transistï¿½,
 // y escuchando un disco de Kraftwerk
-// mi padre a mi madre la antena le metió.
-// 
-// Le echó dos voltios sin sacarla, la antena,
-// y de allí nasío yo.
-// Y aunque soy una máquina mecánica soy,
-// la vergüensa de tó los robó.
-// 
-// Soy un consoladó,
-// soy una máquina de haser el amor,
-// si quieres que te haga felí,
-// llévame muy dentro, muy dentro de ti.
+// mi padre a mi madre la antena le metiï¿½.
 //
-//                    Soy una máquina de haser el amor - Mojinos Escozíos
+// Le echï¿½ dos voltios sin sacarla, la antena,
+// y de allï¿½ nasï¿½o yo.
+// Y aunque soy una mï¿½quina mecï¿½nica soy,
+// la vergï¿½ensa de tï¿½ los robï¿½.
+//
+// Soy un consoladï¿½,
+// soy una mï¿½quina de haser el amor,
+// si quieres que te haga felï¿½,
+// llï¿½vame muy dentro, muy dentro de ti.
+//
+//                    Soy una mï¿½quina de haser el amor - Mojinos Escozï¿½os
 
 //******************************************************************************
 // Includes.
@@ -50,7 +50,7 @@ void elegir_idioma(void);
 void intro(void);
 
 //******************************************************************************
-// Función main()
+// Funciï¿½n main()
 //    Bucle principal.
 //******************************************************************************
 int main(void)
@@ -81,8 +81,8 @@ END_OF_MAIN();
 
 
 //******************************************************************************
-// Función ini_video()
-//    Inicializa el modo de vídeo.
+// Funciï¿½n ini_video()
+//    Inicializa el modo de vï¿½deo.
 //******************************************************************************
 char ini_video(void)
 {
@@ -103,7 +103,7 @@ char ini_video(void)
        set_color_depth(32);
        if(set_gfx_mode(GFX_AUTODETECT, RES_X, RES_Y, 0, 0))
         {
-         allegro_message("No se ha podido establecer ningún modo de video.\nCould not set any video mode.");
+         allegro_message("No se ha podido establecer ningï¿½n modo de video.\nCould not set any video mode.");
          return -1;
         }
       }
@@ -113,7 +113,7 @@ char ini_video(void)
 }
 
 //******************************************************************************
-// Función comprobar_dats()
+// Funciï¿½n comprobar_dats()
 //    Comprueba que se encuentran presentes todos los ficheros .dat necesarios
 //******************************************************************************
 char comprobar_dats(void)
@@ -197,7 +197,7 @@ char comprobar_dats(void)
 }
 
 //******************************************************************************
-// Función ini_entrada()
+// Funciï¿½n ini_entrada()
 //    Inicializa los dispositivos de entrada (teclado y joystick).
 //******************************************************************************
 void ini_entrada(void)
@@ -216,15 +216,15 @@ void ini_entrada(void)
 }
 
 //******************************************************************************
-// Función menu()
-//    Menú principal.
+// Funciï¿½n menu()
+//    Menï¿½ principal.
 //******************************************************************************
 char menu(void)
 {
  char f, n, pulsado=1, contador=0, opc=0, elegida=50;
  char opciones[10][18]={"Comenzar",         "Start game",
                         "Opciones",         "Options",
-                        "Créditos",         "Credits",
+                        "Crï¿½ditos",         "Credits",
                         "Redefinir teclas", "Redefine keys",
                         "Salir",            "Exit"};
  static char pos_cursor[10]={8,10,8,7,8,7,16,13,5,4};
@@ -326,8 +326,8 @@ char menu(void)
   draw_sprite(buffer,bmptxt,0,_Y_);
 
 //******************************************************************************
-// Función creditos()
-//    Créditos del juego.
+// Funciï¿½n creditos()
+//    Crï¿½ditos del juego.
 //******************************************************************************
 char creditos(void)
 {
@@ -350,24 +350,24 @@ char creditos(void)
    fm_escribir_centrado("Code and sound effects:",268);
    reproducir_sonido(23,PLAYMODE_PLAY);
    for(f=0;f<10;f++) {reproducir_musica(0);fm_volcar();}
-   fm_escribir_centrado("Ignacio Pérez Gil",328);
+   fm_escribir_centrado("Ignacio Pï¿½rez Gil",328);
    reproducir_sonido(23,PLAYMODE_PLAY);
    for(f=0;f<10;f++) {reproducir_musica(0);fm_volcar();}
   }
  else
   {
-   fm_escribir_centrado("Gráficos y música:",108-25);
+   fm_escribir_centrado("Grï¿½ficos y mï¿½sica:",108-25);
    reproducir_sonido(23,PLAYMODE_PLAY);
    for(f=0;f<10;f++) {reproducir_musica(0);fm_volcar();}
    fm_escribir_centrado("D-o-S",168-25);
    reproducir_sonido(23,PLAYMODE_PLAY);
    for(f=0;f<10;f++) {reproducir_musica(0);fm_volcar();}
 
-   fm_escribir_centrado("Código y efectos",268-25);
+   fm_escribir_centrado("Cï¿½digo y efectos",268-25);
    fm_escribir_centrado("de sonido:",328-25);
    reproducir_sonido(23,PLAYMODE_PLAY);
    for(f=0;f<10;f++) {reproducir_musica(0);fm_volcar();}
-   fm_escribir_centrado("Ignacio Pérez Gil",388-25);
+   fm_escribir_centrado("Ignacio Pï¿½rez Gil",388-25);
    reproducir_sonido(23,PLAYMODE_PLAY);
    for(f=0;f<10;f++) {reproducir_musica(0);fm_volcar();}
   }
@@ -383,7 +383,7 @@ char creditos(void)
 
  blit((BITMAP *)(f_esc[28].dat),buffer,0,0,0,0,RES_X,RES_Y);
 
- fm_escribir_centrado("© Ultimate Play",108);
+ fm_escribir_centrado("ï¿½ Ultimate Play",108);
  reproducir_sonido(23,PLAYMODE_PLAY);
  for(f=0;f<10;f++) {reproducir_musica(0);fm_volcar();}
 
@@ -418,14 +418,14 @@ char creditos(void)
   else if(_N_<10){numtxt[0]='0'+_N_;numtxt[1]='%';numtxt[2]=0;}\
   else {numtxt[0]='0'+_N_/10;numtxt[1]='0'+_N_%10;numtxt[2]='%';numtxt[3]=0;}
 //******************************************************************************
-// Función opciones()
-//    Menú de opciones.
+// Funciï¿½n opciones()
+//    Menï¿½ de opciones.
 //******************************************************************************
 char opciones(void)
 {
  char f, n, pulsado=1, contador=0, opc=0, elegida=4;
  char opciones[8][24]={"Modo ventana","Windowed mode","Modo pantalla completa",
-                       "Fullscreen mode","Turn to English","Cambiar a Español","Salir","Exit"};
+                       "Fullscreen mode","Turn to English","Cambiar a Espaï¿½ol","Salir","Exit"};
  static char pos_cursor[8]={12,13,22,15,15,17,5,4};
  static short pos_x[8]={133,107,7,100,117,75,248,260};
  BITMAP *m_trans=create_bitmap(RES_X,48);
@@ -446,7 +446,7 @@ char opciones(void)
  for(n=0;n<10;n++) {reproducir_musica(0);fm_volcar();}
 
  reproducir_sonido(23,PLAYMODE_PLAY);
- textout_centre_ex(buffer,(FONT *)(f_fuentes[1].dat),idioma?"Music volume":"Volumen de música",RES_X/2,130,-1,-1);
+ textout_centre_ex(buffer,(FONT *)(f_fuentes[1].dat),idioma?"Music volume":"Volumen de mï¿½sica",RES_X/2,130,-1,-1);
  fm_num_pctj(volmus);
  textout_centre_ex(buffer,(FONT *)(f_fuentes[1].dat),numtxt,RES_X/2,180,-1,-1);
  textout_ex(buffer,(FONT *)(f_fuentes[1].dat),"-",190,180,-1,-1);
@@ -530,9 +530,9 @@ char opciones(void)
      fm_num_pctj(volmus);
      if(opc==2 || opc==3)
       {
-       textout_centre_ex(m_trans,(FONT *)(f_fuentes[0].dat),idioma?"Music volume":"Volumen de música", RES_X/2, -8, -1, -1);
+       textout_centre_ex(m_trans,(FONT *)(f_fuentes[0].dat),idioma?"Music volume":"Volumen de mï¿½sica", RES_X/2, -8, -1, -1);
        draw_trans_sprite(buffer,m_trans,-5,143);
-       textout_centre_ex(buffer, (FONT *)(f_fuentes[0].dat),idioma?"Music volume":"Volumen de música", RES_X/2, 130, -1, -1);
+       textout_centre_ex(buffer, (FONT *)(f_fuentes[0].dat),idioma?"Music volume":"Volumen de mï¿½sica", RES_X/2, 130, -1, -1);
        clear_to_color(m_trans,(hicolor?MASK_COLOR_16:MASK_COLOR_32));
        textout_centre_ex(m_trans,(FONT *)(f_fuentes[0].dat),numtxt,RES_X/2,-8,-1,-1);
        if(contador)
@@ -556,7 +556,7 @@ char opciones(void)
       }
      else
       {
-       textout_centre_ex(buffer,(FONT *)(f_fuentes[1].dat),idioma?"Music volume":"Volumen de música",RES_X/2,130,-1,-1);
+       textout_centre_ex(buffer,(FONT *)(f_fuentes[1].dat),idioma?"Music volume":"Volumen de mï¿½sica",RES_X/2,130,-1,-1);
        fm_num_pctj(volmus);
        textout_centre_ex(buffer,(FONT *)(f_fuentes[1].dat),numtxt,RES_X/2,180,-1,-1);
        textout_ex(buffer,(FONT *)(f_fuentes[1].dat),"-",190,180,-1,-1);
@@ -677,13 +677,13 @@ char opciones(void)
 #undef fm_num_pctj(_N_)
 
 //******************************************************************************
-// Función preguntar()
-//    Pregunta si se quiere enviar la puntuación.
+// Funciï¿½n preguntar()
+//    Pregunta si se quiere enviar la puntuaciï¿½n.
 //******************************************************************************
 char preguntar(void)
 {
  int ct=makecol(255,0,255);
- char opciones[3][5]={"Sí","Yes","No"};
+ char opciones[3][5]={"Sï¿½","Yes","No"};
  char opc=0, contador=0, pulsado=1;
  unsigned char elegida=10;
  BITMAP *bmptxt=create_bitmap(RES_X,48);
@@ -692,7 +692,7 @@ char preguntar(void)
  FILE *salpnt=NULL;
  int resultado;
 
- // Si el fichero de salida no existe, lo creamos y escribimos el título.
+ // Si el fichero de salida no existe, lo creamos y escribimos el tï¿½tulo.
  reproducir_musica(0);
  if(exists("scores.txt"))
   {
@@ -734,8 +734,8 @@ char preguntar(void)
  blit((BITMAP *)(f_esc[28].dat),buffer,0,0,0,0,RES_X,RES_Y);
  for(contador=0;contador<10;contador++) {reproducir_musica(0);fm_volcar();}
  reproducir_sonido(23,PLAYMODE_PLAY);
- fm_escribir_centrado((idioma?"Do you want to send":"¿Quieres enviar tu"),58);
- fm_escribir_centrado((idioma?"your score to the":"puntuación a la tabla"),108);
+ fm_escribir_centrado((idioma?"Do you want to send":"ï¿½Quieres enviar tu"),58);
+ fm_escribir_centrado((idioma?"your score to the":"puntuaciï¿½n a la tabla"),108);
  fm_escribir_centrado((idioma?"online hiscore table?":"de puntuaciones online?"),158);
  for(contador=0;contador<10;contador++) {reproducir_musica(0);fm_volcar();}
  reproducir_sonido(23,PLAYMODE_PLAY);
@@ -752,8 +752,8 @@ char preguntar(void)
    if(contador==0 || contador==30)
     {
      blit((BITMAP *)(f_esc[28].dat),buffer,0,0,0,0,RES_X,RES_Y);
-     fm_escribir_centrado((idioma?"Do you want to send":"¿Quieres enviar tu"),58);
-     fm_escribir_centrado((idioma?"your score to the":"puntuación a la tabla"),108);
+     fm_escribir_centrado((idioma?"Do you want to send":"ï¿½Quieres enviar tu"),58);
+     fm_escribir_centrado((idioma?"your score to the":"puntuaciï¿½n a la tabla"),108);
      fm_escribir_centrado((idioma?"online hiscore table?":"de puntuaciones online?"),158);
      opciones[0][2]=opciones[1][3]=opciones[2][2]=0;
      if(contador==0) opciones[opc?2:idioma][!opc&&idioma?3:2]='_';
@@ -878,9 +878,9 @@ char preguntar(void)
  blit((BITMAP *)(f_esc[28].dat),buffer,0,0,0,0,RES_X,RES_Y);
  reproducir_sonido(23,PLAYMODE_PLAY);
  if(resultado==INET_SUCCESS)
-  {fm_escribir_centrado((idioma?"Done!":"¡Hecho!"),208);}
+  {fm_escribir_centrado((idioma?"Done!":"ï¿½Hecho!"),208);}
  else
-  {fm_escribir_centrado((idioma?"Error!":"¡Error!"),208);}
+  {fm_escribir_centrado((idioma?"Error!":"ï¿½Error!"),208);}
 
  destroy_bitmap(bmptxt);
  do
@@ -898,7 +898,7 @@ char preguntar(void)
 #undef fm_escribir_centrado(_T_,_Y_)
 
 //******************************************************************************
-// Función redefinir()
+// Funciï¿½n redefinir()
 //    Redefine el teclado.
 //******************************************************************************
 #define NUM_TECLAS_POSIBLES 75
@@ -967,13 +967,13 @@ char redefinir(void)
        else if(num_elegida[f]<26)
         {cd[n++]='A'+num_elegida[f];} // Letra.
        else if(num_elegida[f]<36)
-        {cd[n++]='0'+num_elegida[f]-26;} // Número.
+        {cd[n++]='0'+num_elegida[f]-26;} // Nï¿½mero.
        else if(num_elegida[f]<45)
-        {cd[n++]='F';cd[n++]='1'+num_elegida[f]-36;} // Tecla de función.
+        {cd[n++]='F';cd[n++]='1'+num_elegida[f]-36;} // Tecla de funciï¿½n.
        else if(num_elegida[f]<48)
-        {cd[n++]='F';cd[n++]='1';cd[n++]='0'+num_elegida[f]-45;} // Tecla de función.
+        {cd[n++]='F';cd[n++]='1';cd[n++]='0'+num_elegida[f]-45;} // Tecla de funciï¿½n.
        else if(num_elegida[f]<58)
-        {cd[n++]='0'+num_elegida[f]-48;cd[n++]='P';cd[n++]='A';cd[n++]='D';} // Tecla de función.
+        {cd[n++]='0'+num_elegida[f]-48;cd[n++]='P';cd[n++]='A';cd[n++]='D';} // Tecla de funciï¿½n.
        else
         {
          for(i=0;nombre_tecla[(num_elegida[f]-58)*2+idioma][i];i++,n++)
@@ -1065,93 +1065,21 @@ char redefinir(void)
 }
 
 //******************************************************************************
-// Función intro()
-//    introducción.
+// Funciï¿½n intro()
+//    introducciï¿½n.
 //******************************************************************************
 void intro(void)
 {
- int color_fondo=makecol(149,149,198);
- short transp;
- short x,y,contador;
- BITMAP *mapa_intro=NULL;
- char voz=-1;
- DATAFILE *f_intro=load_datafile("intro.dat");
-
- mapa_intro=(BITMAP *)(f_intro[0].dat);
- x=(buffer->w-mapa_intro->w)/2;
- y=(buffer->h-mapa_intro->h)/2;
- voz=reproducir_onda((SAMPLE *)(f_intro[1].dat),PLAYMODE_PLAY);
-// Se enciende la pantalla
- transp=195;
- do
-  {
-   if(transp<150)
-     clear_to_color(buffer,makecol(150-transp,150-transp,200-transp));
-   else
-     clear_to_color(buffer,makecol(0,0,200-transp));
-   fm_volcar();
-   transp-=5;
-  }while(transp);
-
-// Aparece el logo de Retrospec
- transp=248;
- do
-  {
-   clear_to_color(buffer,color_fondo);
-   set_trans_blender(0,0,0,256-transp);
-   draw_trans_sprite(buffer,mapa_intro,x,y);
-   fm_volcar();
-  }while(transp-=8);
-
- clear_to_color(buffer,color_fondo);
- blit(mapa_intro,buffer,0,0,x,y,mapa_intro->w,mapa_intro->h);
-
-// El logo permanece 8 segundos, o hasta que se pulse una tecla.
- contador=0;
- clear_keybuf();
- do
-  {
-   contador++;
-   fm_volcar();
-   poll_keyboard();
-   poll_mouse();
-  }while(!keypressed() && !mouse_b && contador<8*TICKS);
- detener_sonido(voz);
- voz=-1;
-
-// Desaparece el logo
- transp=248;
- do
-  {
-   clear_to_color(buffer,color_fondo);
-   set_trans_blender(0,0,0,transp);
-   draw_trans_sprite(buffer,mapa_intro,x,y);
-   fm_volcar();
-  }while(transp-=8);
-
-// Se apaga la pantalla
- transp=5;
- do
-  {
-   if(transp<150)
-     clear_to_color(buffer,makecol(150-transp,150-transp,200-transp));
-   else
-     clear_to_color(buffer,makecol(0,0,200-transp));
-   fm_volcar();
-   transp+=5;
-  }while(transp<200);
-
- detener_sonidos(1);
- unload_datafile(f_intro);
+  printf("Init!!!\n");
 }
 
 //******************************************************************************
-// Función elegir_idioma()
+// Funciï¿½n elegir_idioma()
 //    Elige un idioma.
 //******************************************************************************
 void elegir_idioma(void)
 {
- char opciones[2][9]={"Español","English"};
+ char opciones[2][9]={"Espaï¿½ol","English"};
  char opc=0, contador=0, pulsado=1;
  BITMAP *m_trans=create_bitmap(216,57);
 
@@ -1214,12 +1142,12 @@ void elegir_idioma(void)
 }
 
 //***********************************\\
-//  Funciones de configuración       \\
+//  Funciones de configuraciï¿½n       \\
 //***********************************\\
 
 //******************************************************************************
-// Función leer_cfg()
-//    Carga el fichero de configuración. En caso de no encontrarlo, se pregunta
+// Funciï¿½n leer_cfg()
+//    Carga el fichero de configuraciï¿½n. En caso de no encontrarlo, se pregunta
 //  por el idioma y se crea uno con el resto de valores por defecto.
 //******************************************************************************
 void leer_cfg(void)
@@ -1256,8 +1184,8 @@ void leer_cfg(void)
 }
 
 //******************************************************************************
-// Función escribir_cfg()
-//    Se escribe el fichero de configuración.
+// Funciï¿½n escribir_cfg()
+//    Se escribe el fichero de configuraciï¿½n.
 //******************************************************************************
 void escribir_cfg(void)
 {
@@ -1272,4 +1200,3 @@ void escribir_cfg(void)
  pack_fwrite(&nuevo_marcador, sizeof(char), cfg);
  pack_fclose(cfg);
 }
-
